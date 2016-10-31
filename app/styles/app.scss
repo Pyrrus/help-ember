@@ -1,0 +1,54 @@
+@import "ember-cli-font-awesome-sass";
+
+body {
+  background-image: url('../images/jumbotron.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron {
+  border: solid 3px #f7a440;
+  background-color: black;
+  h1 {
+    font-family: 'Nosifer', cursive;
+    text-shadow: 2px 5px #f7a440;
+    color: #cc292d;
+  }
+}
+
+button {
+  font-family: 'Nosifer', cursive;
+  font-size: 20px;
+  color: red;
+  background-color: black;
+  border: 1px solid #f7a440;
+}
+
+.btn:hover {
+  background-color: #D77D00;
+  color: red;
+}
+
+.form-control:focus {
+  border-color: red;
+}
+
+.navbar-default {
+  background-color: #eb642e;
+  border: solid #f7a440 3px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: black;
+}
+
+label {
+  text-shadow: 2px 2px 5px #f7a440;
+  font-size: 25px;
+  font-family: 'Nosifer', cursive;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+}

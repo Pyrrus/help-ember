@@ -1,0 +1,44 @@
+<h4>Current Queue</h4>
+
+<table class="table table-hover table-responsive">
+	<thead>
+		<tr>
+			<th>
+				Pair names:
+			</th>
+			<th>
+				Problem:
+			</th>
+			<th>
+				Station:
+			</th>
+      <th>
+				Time wait:
+			</th>
+      <th>
+				Remove:
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+    {{#each model as |ticket|}}
+  		<tr>
+  			<td>
+  				{{ticket.pairname}}
+  			</td>
+  			<td>
+  				{{ticket.problem}}
+  			</td>
+  			<td>
+  				{{ticket.station}}
+  			</td>
+        <td>
+          {{moment-from-now ticket.timewait interval=1000}}
+        </td>
+        <td>
+          <button class="btn btn-danger btn-sm" {{action 'deleteTicket' ticket}}><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+        </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

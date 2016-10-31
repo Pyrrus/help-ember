@@ -1,0 +1,32 @@
+<h4>Current Queue</h4>
+
+<table class="table table-hover table-responsive">
+	<thead>
+		<tr>
+			<th>
+				Pair names:
+			</th>
+			<th>
+				Problem:
+			</th>
+			<th>
+				Station:
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+    {{#each model as |ticket|}}
+  		<tr>
+  			<td>
+  				{{ticket.pairname}}
+  			</td>
+  			<td>
+  				{{ticket.problem}}
+  			</td>
+  			<td>
+  				{{ticket.station}}
+  			</td>
+  		</tr>
+    {{/each}}
+	</tbody>
+</table>
