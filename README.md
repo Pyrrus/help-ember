@@ -1,7 +1,6 @@
-# Queue
+# Help Queue
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Make a help queue using ember
 
 ## Prerequisites
 
